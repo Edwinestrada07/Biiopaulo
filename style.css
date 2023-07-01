@@ -1,0 +1,299 @@
+/* Estilos CSS para el menú */
+.container-nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #c0b9b9;
+    opacity: 100%;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+  }
+  .navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 67%;
+  }
+  .brand {
+    text-decoration: none;
+    color: #45455A;
+    font-size: 22px;
+    font-family: Perpetua;
+    padding-left: 50px;
+    margin-bottom: 0;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+  }
+  .nav-links {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+  }
+  .nav-links li a {
+    text-decoration: none;
+    color: #45455A;
+    font-size: 16px;
+    padding: 7px;
+    font-family: monospace;
+    font-weight: bold;
+    margin-right: 10px;
+  }
+  nav a:hover {
+    color: #b1d3db;
+  }
+
+  /**/
+  .button-menu-toggle {
+    display: none;
+    color: #F4989C;
+    border: none;
+    padding: 10px 30px;
+    margin: 10px;
+    cursor: pointer;
+    font-family: monospace;
+  } 
+
+/* Estilos CSS botón WHATSAPP e INSTRAGRAM */
+  button {
+    background: #f0eeef;
+    border: none;
+    padding: 2px 4px;
+    cursor: pointer;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+  }
+  .button-container {
+    display: flex;
+    align-items: center;
+  }
+  .button-container a {
+    margin-right: 10px;
+  }
+  .button-container img {
+    width: 38px;
+    height: 38px;
+  }
+  /* <------> ordenar por whatsapp e instagram CONTACTO*/
+  .button-whatsapp {    
+    text-align: center;
+    margin-top: 40px;
+  }
+  .button-whatsapp a {
+    text-decoration: none;
+    color: #fff;
+    padding: 5px 10px;
+    display: inline-block;
+    border-radius: 10px;
+    
+    
+
+  background-image: linear-gradient(90deg, #00C0FF 0%, #FFCF00 49%, #FC4F4F 80%, #00C0FF 100%);
+  }
+  .btn1 {
+    display: inline-block;
+    padding: 2px 5px;
+    animation-name: pulse;
+    animation-duration: 1.5s;
+    animation-iteration-count: infinite;
+  }
+  @keyframes slidebg {
+    to {
+      background-position:20vw;
+    }
+  }
+  @keyframes pulse {
+    0% {transform: scale (1);}
+    50% {transform: scale(0.9);}
+    100% {transform: scale(1);}
+  }
+
+/* Estilos CSS animaciones mockup */
+  .button-whatsapp,
+  .Mockupcel {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .button-whatsapp img,
+  .Mockupcel img {
+    max-width: 60%; /* Ajusta el valor para cambiar el tamaño máximo de la imagen */
+    height: auto; /* Mantener la proporción original de la imagen */
+  }  
+
+/* Estilos generales CSS para Inicio / Nosotros */
+  body {
+    margin: 0;
+    padding: 0;
+    background-color: #DAE0F2;
+  }
+  h2 {
+    text-decoration: none;
+    color: #45455A;
+    font-size: 30px;
+    font-family: Perpetua;
+    margin-bottom: 0;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+    text-align: center;
+    }
+
+/* Estilos CSS para Galería Slider */
+  .slider {
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+  }
+  .slide {
+    display: none;
+    width: 100%;
+  }
+  .slide img {
+    width: 100%;
+  }
+  .active {
+    display: block;
+  }
+  .prev, .next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 30px;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 10px;
+    cursor: pointer;
+  }
+  .prev {
+    left: 10px;
+  }
+  .next {
+    right: 10px;
+  }
+
+/* Estilos CSS para Galería de imagenes */
+  .gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .photo {
+    margin: 10px;
+    cursor: pointer;
+  } 
+  .photo img {
+    width: 200px;
+    height: auto;
+    transition: transform 0.3s;
+    border-radius: 15px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+  }
+  .photo img:hover {
+    transform: scale(1.1);
+  }
+  .modal {
+    display: none;
+    position: fixed;
+    z-index: 9999;
+    padding-top: 50px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    overflow: auto;
+  }
+  .modal #expandedImg {
+    display: block;
+    margin: auto;
+    max-width: 90%;
+    max-height: 90%;
+    border-radius: 15px;
+    box-shadow: 0 2px 4px rgba(245, 240, 240, 0.781);
+  }
+  .modal .close {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  .modal .close:hover,
+  .modal .close:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  .image-scale-in {
+    transform: scale(0);
+    animation: scaleIn 1.5s ease-in-out forwards;
+  }
+  @keyframes scaleIn {
+    0% {transform: scale(0);}
+    100% {transform: scale(1);}
+  }  
+
+/* Footer */
+  footer {
+    background-color: #333;
+    font-size: 18px;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+  }
+  .ubicar-link {
+    color: #F4989C; /* Cambia el color aquí */
+    text-decoration: underline;
+    line-height: 0.8;
+  }
+  footer p {
+    margin: 15px;
+  }
+  .nav-link {      /*Esta parte hace énfasis al menú del footer*/
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+  }
+  .nav-link li a {
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 15px;
+    padding: 7px;
+    font-family: monospace;
+    font-weight: bold;
+    margin-right: 20px;
+  }
+
+/* Media Queries */
+  @media screen and (max-width: 768px) {
+    .container {
+      padding: 10px;
+    }
+    .navbar {
+      flex-direction: column;
+      align-items: center;
+    }
+    .nav-links {
+      margin-top: 10px;
+      flex-wrap: wrap;
+    }
+    .nav-links li {
+      margin-right: 0;
+      margin-bottom: 10px;
+    }
+    .button-container {
+      flex-direction: column;
+      align-items: center;
+      margin-top: 10px;
+    }
+    .button-container a {
+      margin-right: 0;
+      margin-bottom: 10px;
+    }
+    .Mockupcel {
+      flex-direction: column;
+      align-items: center;
+      margin-top: 10px;
+    }
+  }
+
