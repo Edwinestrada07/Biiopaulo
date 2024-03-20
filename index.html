@@ -1,94 +1,259 @@
 <!DOCTYPE html>
-<html lang="es">
+<html class="h-100" lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width,initial-scale=1,shrink-to-fit=no" />
+        <meta name="description" content="A growing collection of ready to use components for the CSS framework Bootstrap 5" />
+        <link rel="apple-touch-icon" sizes="180x180" href="img/apple-touch-icon.png" />
+        <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png" />
+        <link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png" />
+        <link rel="icon" type="image/png" sizes="96x96" href="img/favicon.png" />
+        <meta name="author" content="Holger Koenemann" />
+        <meta name="generator" content="Eleventy v2.0.0" />
+        <meta name="HandheldFriendly" content="true" />
+        <title>Biiopaulo</title>
+        <link rel="stylesheet" href="css/theme.css" />
+    </head>
 
-<head>
-    <title>Biiopaulo</title>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/jquery.slick/1.8.1/slick.css">
-    <link rel="stylesheet" href="style.css">
-    <link rel="icon" type="imagen1" href="imagen/galery3.jpg">
-</head>
+    <body data-bs-spy="scroll" data-bs-target="#navScroll">
+        <nav id="navScroll" class="navbar navbar-expand-lg navbar-light fixed-top" tabindex="0" >
+            <div class="container">
+                <a class="navbar-brand pe-4 fs-4" href="/">
+                    <span class="ms-1 fw-bolder">Biiopaulo</span>
+                </a>
+                <button
+                    class="navbar-toggler"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent"
+                    aria-controls="navbarSupportedContent"
+                    aria-expanded="false"
+                    aria-label="Toggle navigation"
+                  >
+                    <span class="navbar-toggler-icon"></span>
+                </button>
 
-<body>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#services" aria-label="Brings you to the frontpage">Servicios</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#gallery"> Galería </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#contact"> Contacto </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
 
-  <header>
-    <div class="container-nav">
-      <nav class="navbar">
-        <a href="index.html" class="brand"><h1><i>Biiopaulo</i></h1></a>
-        <ul class="nav-links">
-          <li><a href="index.html">Inicio</a></li>
-          <li><a href="galería.html">Galería</a></li>
-          <li><a href="contacto.html">Contacto</a></li>
-        </ul>
-      </nav>
-      
-      <div class="button-container">
-        <a href="https://api.whatsapp.com/send?phone=573016372016&text=Hola%2C%20estoy%20interesad%40%20en%20un%20producto📸🐥🦅" class="btn1" target="_blank">
-          <img src="imagen/whatsapp.png" alt="WhatsApp" width="50" height="50"></a>
-        <a href="https://www.instagram.com/biiopaulo/" class="btn1" target="_blank">
-          <img src="imagen/instagram.png" alt="instagram" width="50" height="50"></a>
-      </div>
-    </div>
-  </header>
+        <main>
+            <div class="w-100 overflow-hidden bg-gray-100" id="top">
+                <div class="container position-relative">
+                    <div 
+                        class="col-12 col-lg-8 mt-0 h-100 position-absolute top-0 end-0 bg-cover"
+                        data-aos="fade-left"
+                        style="background-image: url(img/interior11.jpg)"
+                      >
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-7 py-vh-6 position-relative" data-aos="fade-right">
+                            
+                            <h1 class="display-1 fw-bold mt-5">
+                                Combinamos arte y naturaleza con pasión
+                            </h1>
+                            <p class="lead">
+                                Descubre cómo nuestras creaciones reflejan la magia y la diversidad 
+                                de la naturaleza colombiana.
+                            </p>
+                            <a href="https://api.whatsapp.com/send?phone=573016372016&text=Hola%2C%20estoy%20interesad%40%20en%20un%20producto📸🐥🦅" class="btn btn-dark btn-xl shadow me-3 rounded-0 my-5" target="_blank">
+                                <img src="img/whatsapp.png" alt="WhatsApp" width="50" height="50">    
+                                contáctame 
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
 
-  <main>
-    <div class="slider">
-      <div class="slide active">
-        <img src="imagen/slider1.jpg" alt="slider1">
-      </div>
-      <div class="slide">
-        <img src="imagen/slider2.jpg" alt="slider2">
-      </div>
-      <div class="slide">
-        <img src="imagen/slider3.jpg" alt="slider3">
-      </div>
-      <a class="prev" onclick="changeSlide(-1)">&#10094;</a>
-      <a class="next" onclick="changeSlide(1)">&#10095;</a>
-    </div>
+            <div class="py-vh-5 w-100 overflow-hidden" id="services">
+                <div class="container">
+                    <div class="row d-flex justify-content-end">
+                        <div class="col-lg-8" data-aos="fade-down">
+                            <h2 class="display-6">
+                                Estos servicios destacan la versatilidad y la creatividad, ofreciendo 
+                                a los clientes una amplia gama de opciones para incorporar el arte y la 
+                                naturaleza colombiana en sus vidas.
+                            </h2>
+                        </div>
+                    </div>
+                    <div class="row d-flex align-items-center">
+                        <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="200" >
+                            <span class="h5 fw-lighter">01.</span>
+                            <h3 class="py-5 border-top border-dark">
+                                Cuadros de Resina con Aves icónicas de Colombia.
+                            </h3>
+                            <p>
+                                Transforma tus espacios y momentos especiales en obras de arte únicas con 
+                                nuestros cuadros de resina. La biodiversidad de las aves colombianas sus colores y brillos 
+                                impresionantes nos deja ver que somos un país rico en fauna silvestre, nuestras piezas 
+                                hechas a medida te permiten capturar la esencia y la magiá.
+                            </p>
+                        </div>
 
-    <h2><i>Biiopaulo en Instagram</i></h2>
+                        <div class="col-md-6 col-lg-4 py-vh-4 pb-0" data-aos="fade-up" data-aos-delay="400" >
+                            <span class="h5 fw-lighter">02.</span>
+                            <h3 class="py-5 border-top border-dark">
+                                Portavasos de Aves Colombianas.
+                            </h3>
+                            <p>
+                                Dale un toque de color y elegancia a tus momentos de descanso con nuestros portavasos 
+                                inspirados en las aves icónicas de Colombia. Cada portavasos está meticulosamente pintado 
+                                a mano por nuestros artistas, y ofrece una combinación perfecta de funcionalidad y belleza 
+                                natural. Disfruta de tus bebidas favoritas mientras admiras la exuberante fauna de Colombia 
+                                en cada detalle.
+                            </p>
+                        </div>
 
-    <div class="Mockupcel">
-      <img class="image" src="imagen/Mockupcel.png" alt="Imagen">
-    </div>
-  </main>
+                        <div class="col-md-6 col-lg-4 py-vh-6 pb-0" data-aos="fade-up" data-aos-delay="600" >
+                            <span class="h5 fw-lighter">03.</span>
+                            <h3 class="py-5 border-top border-dark">
+                                Camisetas Pintadas a Mano.
+                            </h3>
+                            <p>
+                                Lleva contigo el espíritu vibrante de la naturaleza colombiana con nuestras camisetas 
+                                pintadas a mano. Cada diseño está cuidadosamente elaborado para capturar la belleza y 
+                                la diversidad de las aves locales, ofreciéndote una forma única de expresar tu amor por 
+                                la vida salvaje y el arte. Ya sea para un día de aventuras al aire libre o simplemente 
+                                para destacar en tu día a día, nuestras camisetas son el complemento perfecto para 
+                                cualquier ocasión.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
 
-  <footer>
-    <ul class="nav-link">
-      <li><a href="index.html">Inicio</a></li>
-      <li><a href="galería.html">Galería</a></li>
-      <li><a href="contacto.html">Contacto</a></li>
-    </ul>
-    <p>¡Gracias por confiar en nosotros y obsequiar arte!</p>
-    <div>
-       <p>Síguenos en Instagram: <a href="https://www.instagram.com/biiopaulo/" class="ubicar-link" target="_blank">@Biiopaulo</a></p>
-       <p>Realiza tus pedidos al WhatsApp: <a href="https://api.whatsapp.com/send?phone=573016372016&text=Hola%2C%20estoy%20interesad%40%20en%20un%20producto📸🐥🦅" class="ubicar-link" target="_blank">+57 301 6372016</a></p>
-     </div>   
-   </footer>
+            <div class="position-relative overflow-hidden w-100 bg-light" id="gallery" >
+                <div class="container-fluid">
+                    <div class="row overflow-scroll">
+                        <div class="col-12">
+                            <div class="row vw-100 px-0 py-vh-5 d-flex align-items-center scrollx" >
+                                <div class="col-md-2" data-aos="fade-up">
+                                    <img
+                                        src="img/interior1.jpg"
+                                        class="rounded shadow img-fluid"
+                                        alt="nice gallery image"
+                                        width="512"
+                                        height="341"
+                                    />
+                                </div>
 
-  <script src="script.js"></script>
-</body>
+                                <div class="col-md-2" data-aos="fade-up" data-aos-delay="200">
+                                    <img
+                                        src="img/interior2.jpg"
+                                        class="img-fluid rounded shadow"
+                                        alt="nice gallery image"
+                                        width="1164"
+                                        height="776"
+                                    />
+                                </div>
+
+                                <div class="col-md-3" data-aos="fade-up" data-aos-delay="400">
+                                    <img
+                                        src="img/interior3.jpg"
+                                        class="img-fluid rounded shadow"
+                                        alt="nice gallery image"
+                                        width="844"
+                                        height="1054"
+                                    />
+                                </div>
+
+                                <div class="col-md-3" data-aos="fade-up" data-aos-delay="600">
+                                    <img
+                                        src="img/interior4.jpg"
+                                        class="img-fluid rounded shadow"
+                                        alt="nice gallery image"
+                                        width="844"
+                                        height="562"
+                                    />
+                                </div>
+
+                                <div class="col-md-2" data-aos="fade-up" data-aos-delay="800">
+                                    <img
+                                        src="img/interior5.jpg"
+                                        class="rounded shadow img-fluid"
+                                        alt="nice gallery image"
+                                        width="512"
+                                        height="341"
+                                    />
+                                </div>
+                                <div>
+                                    <a href="galery.html" class="btn btn-dark btn-xl shadow me-3 rounded-0">Ver Galería</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="py-vh-6 bg-gray-900 text-light w-100 overflow-hidden" id="contact" >
+                <div class="container">
+                    <div class="row d-flex justify-content-center">
+                        <div class="row d-flex justify-content-center text-center">
+                            <div class="col-lg-8 text-center" data-aos="fade">
+                                <p class="text-secondary lead">
+                                    "Donde el arte cobra vida: ¡descubre la belleza de Colombia en cada detalle!"
+                                </p>
+                                <h2 class="display-6 mb-5">
+                                    "Descubre la magia de la naturaleza colombiana en cada obra de arte. © Biiopaulo - Todos los derechos reservados."
+                                </h2>
+                                contáctame 
+                            </div>
+                            <div class="col-12">
+                                <a href="https://api.whatsapp.com/send?phone=573016372016&text=Hola%2C%20estoy%20interesad%40%20en%20un%20producto📸🐥🦅" class="btn btn-dark btn-xl shadow me-3 rounded-0 my-5" target="_blank">
+                                    <img src="img/whatsapp.png" alt="WhatsApp" width="50" height="50">    
+                                </a>
+                                <a href="https://www.instagram.com/biiopaulo/" class="btn btn-dark btn-xl shadow me-3 rounded-0 my-5" target="_blank">
+                                    <img src="img/instagram.png" alt="instagram" width="50" height="50">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+
+        <script src="js/bootstrap.bundle.min.js"></script>
+        <script src="js/aos.js"></script>
+        <script>
+        AOS.init({
+            duration: 800, // values from 0 to 3000, with step 50ms
+        });
+        </script>
+
+        <script>
+        let scrollpos = window.scrollY;
+        const header = document.querySelector(".navbar");
+        const header_height = header.offsetHeight;
+
+        const add_class_on_scroll = () =>
+            header.classList.add("scrolled", "shadow-sm");
+        const remove_class_on_scroll = () =>
+            header.classList.remove("scrolled", "shadow-sm");
+
+        window.addEventListener("scroll", function () {
+            scrollpos = window.scrollY;
+
+            if (scrollpos >= header_height) {
+            add_class_on_scroll();
+            } else {
+            remove_class_on_scroll();
+            }
+
+            console.log(scrollpos);
+        });
+        </script>
+    </body>
 </html>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
